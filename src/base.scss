@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+}
+
+button {
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 0 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+}

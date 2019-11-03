@@ -1,15 +1,12 @@
 import React from 'react';
 import './App.scss';
 import {Link} from 'react-scroll'
-import SpaceNeedle from './space-needle.svg';
-import SVG from 'react-inlinesvg';
+// import {SpaceNeedleAnimation} from "./components/SpaceNeedleAnimation";
 
 const App: React.FC = () => {
   return (
     <>
-      <div className={'space-needle-animation'}>
-        <SVG src={SpaceNeedle}/>
-      </div>
+      {/*<SpaceNeedleAnimation />*/}
       <div className="App">
         <div className={"background"}>
           <section className="hero">
@@ -27,13 +24,20 @@ const App: React.FC = () => {
                   delay={100}
                   duration={1000}
                 >
-                  Scroll down
+                  <h2>Scroll down</h2>
                 </Link>
               </button>
             </div>
           </section>
         </div>
         <main id={'here'}>
+          <div className={'navbar'}>
+            <div className={'navbar-brand'}>Zach Romano</div>
+            <div className={'navbar-links'}>
+              Resume
+            </div>
+
+          </div>
           Hi, I have many, many skils
           <br/>
           <br/>
@@ -87,6 +91,6 @@ const App: React.FC = () => {
       </div>
     </>
   );
-}
+};
 
 export default App;

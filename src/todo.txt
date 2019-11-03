@@ -1,0 +1,6 @@
+finish navbar for desktop and mobile
+floating icons with resume and linkedIn
+personal interests
+projects
+job history
+skills
