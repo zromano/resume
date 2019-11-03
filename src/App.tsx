@@ -1,12 +1,12 @@
 import React from 'react';
 import './App.scss';
 import {Link} from 'react-scroll'
-// import {SpaceNeedleAnimation} from "./components/SpaceNeedleAnimation";
+import {SpaceNeedleAnimation} from "./components/SpaceNeedleAnimation";
 
 const App: React.FC = () => {
   return (
     <>
-      {/*<SpaceNeedleAnimation />*/}
+      <SpaceNeedleAnimation />
       <div className="App">
         <div className={"background"}>
           <section className="hero">
