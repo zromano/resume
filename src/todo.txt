@@ -4,3 +4,4 @@ personal interests
 projects
 job history
 skills
+robots.txt

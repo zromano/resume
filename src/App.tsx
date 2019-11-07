@@ -2,6 +2,8 @@ import React from 'react';
 import './App.scss';
 import {Link} from 'react-scroll'
 import {SpaceNeedleAnimation} from "./components/SpaceNeedleAnimation";
+import {Navbar} from "./components/Navbar";
+import {Button} from "@material-ui/core";
 
 const App: React.FC = () => {
   return (
@@ -16,77 +18,28 @@ const App: React.FC = () => {
                 <img src={process.env.PUBLIC_URL + '/avatar.png'} alt={'Avatar of Zach'}/>
               </div>
               <h2>I'm a full stack developer in Seattle.</h2>
-              <button type="button">
-                <Link
-                  className=""
-                  to="here"
-                  smooth={true}
-                  delay={100}
-                  duration={1000}
-                >
-                  <h2>Scroll down</h2>
-                </Link>
-              </button>
+              <Link
+                className=""
+                to="here"
+                smooth={true}
+                delay={100}
+                duration={1000}
+              >
+                <Button variant="contained" color="secondary">
+
+                  Learn More
+                </Button>
+              </Link>
             </div>
           </section>
         </div>
         <main id={'here'}>
-          <div className={'navbar'}>
-            <div className={'navbar-brand'}>Zach Romano</div>
-            <div className={'navbar-links'}>
-              Resume
-            </div>
+          <Navbar />
+          <p> This site is a work in progress and will have more content soon :) </p>
+          <h1 className="make-scrollable"> About Me </h1>
 
-          </div>
-          Hi, I have many, many skils
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <h1>ha</h1>
-          <h1>ha</h1>
-          <h1>ha</h1>
-          <h1>ha</h1>
-          <h1>ha</h1>
-          <h1>ha</h1>
-          <h1>ha</h1>
-          <h1>ha</h1>
-          <h1>ha</h1>
-          <h1>ha</h1>
-          <h1>ha</h1>
-          <h1>ha</h1>
-          <h1>ha</h1>
-          <h1>ha</h1>
-          <h1>ha</h1>
-          <h1>ha</h1>
-          <h1>ha</h1>
-          <h1>ha</h1>
-          <h1>ha</h1>
-          <h1>ha</h1>
-          <h1>ha</h1>
-          <h1>ha</h1>
+
+          <h1 id="ha-link">link</h1>
         </main>
       </div>
     </>
