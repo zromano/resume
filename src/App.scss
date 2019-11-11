@@ -39,12 +39,14 @@
           width: 5em;
           height: 5em;
         }
+
         h1 {
           font-size: 5em;
           margin: 0;
         }
       }
     }
+
     @media screen and (max-width: 992px) {
       .hero {
         background-attachment: scroll;
@@ -65,9 +67,46 @@
   }
 
   main {
-    .make-scrollable {
-      margin-bottom: 200vh;
+    padding: 0 5px 64px 5px;
+  }
+
+  @media screen and (min-width: 992px) {
+    main {
+      padding: 0 64px 64px 64px;
     }
+  }
+
+  .work {
+    .work-company-role-duration {
+      font-style: italic;
+    }
+  }
+
+
+}
+
+.footer {
+  height: 128px;
+  color: white;
+  background-color: #333335;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .footer-links {
+    display: flex;
+    flex-direction: row;
+  }
+
+  img {
+    margin: 0 8px;
+    width: 32px;
+    height: 32px;
+  }
+
+  span {
+    color: grey;
   }
 }
 
