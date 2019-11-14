@@ -1,5 +1,4 @@
 import React from 'react';
-import {Link} from "react-scroll/modules";
 
 const Navbar: React.FC = () => {
     return (
@@ -7,21 +6,10 @@ const Navbar: React.FC = () => {
             <div className={'navbar-brand'}>Zach Romano</div>
             <div className={'navbar-links'}>
                 <div>
-                    <a href={process.env.PUBLIC_URL + '/RESUME_Oct_2019.pdf'}>
+                    <a href={process.env.PUBLIC_URL + '/Resume.pdf'}>
                         Resume
                     </a>
                 </div>
-                {/*<div>*/}
-                {/*    <Link*/}
-                {/*        className=""*/}
-                {/*        to="ha-link"*/}
-                {/*        smooth={true}*/}
-                {/*        delay={100}*/}
-                {/*        duration={1000}*/}
-                {/*    >*/}
-                {/*        Link*/}
-                {/*    </Link>*/}
-                {/*</div>*/}
                 <div>
                     <a href="mailto:zachary.c.romano@gmail.com?Subject=Hello%20Zach" target="_top">Email</a>
                 </div>
