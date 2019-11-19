@@ -1,6 +1,7 @@
 @import "base";
 @import "components/Navbar";
 @import "components/SpaceNeedleAnimation";
+@import "components/Footer";
 
 .App {
   margin: 0;
@@ -82,31 +83,15 @@
     }
   }
 
-
-}
-
-.footer {
-  height: 128px;
-  color: white;
-  background-color: #333335;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-
-  .footer-links {
+  .about {
     display: flex;
     flex-direction: row;
+
+    img {
+      width: 15em;
+    }
   }
 
-  img {
-    margin: 0 8px;
-    width: 32px;
-    height: 32px;
-  }
 
-  span {
-    color: grey;
-  }
 }
 
