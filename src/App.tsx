@@ -6,6 +6,7 @@ import {Navbar} from "./components/Navbar";
 import {Button} from "@material-ui/core";
 import {JobHistory} from "./components/JobHistory";
 import {Footer} from "./components/Footer";
+import {GithubProjects} from "./components/GithubProjects";
 
 const App: React.FC = () => {
     return (
@@ -50,9 +51,7 @@ const App: React.FC = () => {
                                 applications.
                             </p>
                         </div>
-                        <div>
-                            <img src={process.env.PUBLIC_URL + '/avatar.png'} alt='Avatar of Zach'/>
-                        </div>
+                        <img src={process.env.PUBLIC_URL + '/avatar.png'} alt='Avatar of Zach'/>
                     </div>
 
                     <hr/>
@@ -61,7 +60,7 @@ const App: React.FC = () => {
                         <JobHistory/>
                     </div>
                     <hr/>
-
+                    <GithubProjects/>
                 </main>
                 <Footer/>
             </div>

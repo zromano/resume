@@ -2,12 +2,13 @@
 @import "components/Navbar";
 @import "components/SpaceNeedleAnimation";
 @import "components/Footer";
+@import "components/GithubProjectDetail";
 
 .App {
   margin: 0;
   font-family: sans-serif;
   font-size: 16px;
-  background-color: white;
+  background-color: #f0f0f0;
 
 
   .background {
@@ -28,6 +29,10 @@
       background-position-y: bottom;
       background-repeat: no-repeat;
       background-attachment: fixed;
+
+      h2 {
+        margin-bottom: 16px;
+      }
 
       .header {
         display: flex;
@@ -53,8 +58,6 @@
         background-attachment: scroll;
 
         .header img {
-          width: 5em;
-          height: 5em;
           display: none;
         }
       }
@@ -89,6 +92,12 @@
 
     img {
       width: 15em;
+    }
+
+    @media screen and (max-width: 992px) {
+       img {
+          display: none;
+        }
     }
   }
 
