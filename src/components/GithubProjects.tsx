@@ -44,7 +44,7 @@ const GithubProjects: React.FC = () => {
 
     return (
         <>
-            <h2>Projects</h2>
+            <h1>Projects</h1>
             <ul className="projects">
                 {getProjectDetails()}
             </ul>

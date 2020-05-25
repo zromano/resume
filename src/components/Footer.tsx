@@ -17,7 +17,7 @@ const Footer: React.FC = () => {
                     <img src={process.env.PUBLIC_URL + '/resumeLogo.svg'} alt='Resume symbol'/>
                 </a>
             </div>
-            <p>Zach Romano <span> 2019</span></p>
+            <p>Zach Romano <span>2020</span></p>
         </div>
     )
 };

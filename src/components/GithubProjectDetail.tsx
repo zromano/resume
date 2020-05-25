@@ -13,7 +13,7 @@ const GithubProjectDetail: React.FC<GithubProjectDetailProps> = (props: GithubPr
         <div className="projects-detail">
             <div className="projects-detail__title">{props.projectName}</div>
             <p className="projects-detail__text">{props.description}</p>
-            <a className="projects-detail__button" href={props.url} target={"_blank"}>
+            <a className="projects-detail__button" href={props.url} target="_blank" rel="noopener noreferrer">
                 <Fab size="small" variant="extended" aria-label="like" >
                     <GitHubIcon className="projects-detail__icon" />
                     View Code

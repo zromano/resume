@@ -3,70 +3,30 @@
 @import "components/SpaceNeedleAnimation";
 @import "components/Footer";
 @import "components/GithubProjectDetail";
+@import "variables";
 
 .App {
   margin: 0;
   font-family: sans-serif;
   font-size: 16px;
-  background-color: #f0f0f0;
+  background-color: $background-color;
+  color: $font-color;
 
+  .hero {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
 
-  .background {
-    background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
-
-    .hero {
-      width: 100vw;
-      height: 100vh;
-      display: flex;
-
-      justify-content: center;
-      align-items: flex-start;
-      text-align: center;
-
-      color: white;
-      background-image: url('/seattle-bnw.png');
-      background-position-x: center;
-      background-position-y: bottom;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-
-      h2 {
-        margin-bottom: 16px;
-      }
-
-      .header {
-        display: flex;
-        flex-direction: row;
-        margin-top: 5em;
-        align-items: center;
-        margin-bottom: 0;
-
-        img {
-          width: 5em;
-          height: 5em;
-        }
-
-        h1 {
-          font-size: 5em;
-          margin: 0;
-        }
-      }
+    h1 {
+      font-size: 5em;
+      margin: 0;
     }
 
-    @media screen and (max-width: 992px) {
-      .hero {
-        background-attachment: scroll;
-
-        .header img {
-          display: none;
-        }
-      }
-    }
-    @media screen and (min-width: 992px) {
-      .hero {
-        background-size: 100%;
-
-      }
+    h2 {
+      margin-bottom: 16px;
     }
   }
 
@@ -81,23 +41,31 @@
   }
 
   .work {
+    min-height: 90vh;
+
     .work-company-role-duration {
       font-style: italic;
     }
   }
 
   .about {
-    display: flex;
-    flex-direction: row;
+    min-height: 90vh;
 
-    img {
-      width: 15em;
-    }
+    .about-content {
+      display: flex;
+      flex-direction: row;
 
-    @media screen and (max-width: 992px) {
-       img {
+      img {
+        margin-left: 32px;
+        width: 15em;
+        height: 15em;
+      }
+
+      @media screen and (max-width: 992px) {
+        img {
           display: none;
         }
+      }
     }
   }
 

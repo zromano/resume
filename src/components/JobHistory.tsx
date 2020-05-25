@@ -1,5 +1,4 @@
 import React from 'react';
-import {makeStyles, Theme} from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
@@ -13,7 +12,7 @@ interface TabPanelProps {
 }
 
 function TabPanel(props: TabPanelProps) {
-    const {children, value, index, ...other} = props;
+    const {children, value, index} = props;
 
     return (
         <Typography
@@ -22,7 +21,6 @@ function TabPanel(props: TabPanelProps) {
             hidden={value !== index}
             id={`scrollable-force-tabpanel-${index}`}
             aria-labelledby={`scrollable-force-tab-${index}`}
-            {...other}
         >
             <Box p={3}>{children}</Box>
         </Typography>
@@ -36,16 +34,7 @@ function a11yProps(index: any) {
     };
 }
 
-const useStyles = makeStyles((theme: Theme) => ({
-    root: {
-        flexGrow: 1,
-        width: '100%',
-        backgroundColor: theme.palette.background.paper,
-    },
-}));
-
 const JobHistory: React.FC = () => {
-    const classes = useStyles();
     const [value, setValue] = React.useState(0);
 
     const handleChange = (event: React.ChangeEvent<{}>, newValue: number) => {
@@ -53,13 +42,13 @@ const JobHistory: React.FC = () => {
     };
 
     return (
-        <div className={classes.root}>
-            <AppBar position="static" color="default">
+        <div>
+            <h1>Work History</h1>
+            <AppBar position="static" color="transparent">
                 <Tabs
                     value={value}
                     onChange={handleChange}
                     indicatorColor="primary"
-                    textColor="primary"
                     variant="scrollable"
                     scrollButtons="on"
                     aria-label="scrollable force tabs example"
@@ -77,18 +66,17 @@ const JobHistory: React.FC = () => {
                 <h4>Full Stack Developer</h4>
                 <div className="work-company-role-duration">March 2019-Present</div>
                 <ul>
-                    <li>Paired with developers from across the company to teach modern development practices</li>
-                    <li>Facilitated courses to train developers on how to deploy software to the cloud</li>
+                    <li>Utilized paired programming to teach modern development practices for 1500+ hours</li>
+                    <li>Facilitated courses to train developers on deploying software to the cloud</li>
                     <li>Followed Extreme Programming principles such as Test-Driven Development and CI/CD</li>
-                    <li>
-                        Co-developed an app that generates pipelines to build, test, and deploy apps to the cloud
-                    </li>
-                    <li>Utilized Spring Security and OAuth2 to properly authenticate and authorize users</li>
+                    <li>Built a website to securely track COVID-19 cases in under 24 hours</li>
+                    <li>Co-developed an app that generates GitLab-CI pipelines to build, test, and deploy apps</li>
+                    <li>Utilized Spring Security and oAuth2 to properly authenticate and authorize users</li>
                     <li>Built several highly available and scalable apps and Restful APIs</li>
-                    <li>
-                        Co–developed an app to optimize purchasing that discovered $1.5 billion in unrealized
-                        savings and has already saved over $5 million annually
-                    </li>
+                    <li>Co–produced a website to optimize purchasing that discovered $1.5 billion in unrealized savings and has already saved over $20 million annually</li>
+                    <li>Integrated reusable React components into a web server using server rendered pages</li>
+                    <li>Established scalable Selenium browser tests that must pass prior to deployment</li>
+                    <li>Decreased number of defects deployed by adding SonarQube and Coverity scans</li>
                 </ul>
 
             </TabPanel>

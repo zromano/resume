@@ -13,10 +13,18 @@ body {
   -moz-font-feature-settings: "liga" on;
 }
 
+h1 {
+  text-align: center;
+  font-size: 3rem;
+}
+
 h2, h4 {
   margin: 0;
 }
 
 hr {
-  margin-bottom: 64px;
+  height: 1px;
+  background-color: grey;
+  border: none;
+  margin: 0 64px 64px 64px;
 }

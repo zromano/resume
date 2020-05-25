@@ -1,3 +1,5 @@
+@import "../variables";
+
 .space-needle-animation {
   z-index: 9999999;
   width: 100%;
@@ -5,7 +7,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: RGBA(0,0,0,20);
+  background-color: $background-color;
   position: fixed;
   left: 0;
   top: 0;

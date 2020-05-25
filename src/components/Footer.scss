@@ -1,11 +1,11 @@
 .footer {
   height: 128px;
   color: white;
-  background-color: #333335;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  border-top: 1px solid grey;
 
   .footer-links {
     display: flex;
