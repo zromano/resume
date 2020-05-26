@@ -1,6 +1,7 @@
+@import "../variables";
+
 .footer {
   height: 128px;
-  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,13 +13,21 @@
     flex-direction: row;
   }
 
+  .footer-name {
+    margin-top: 16px;
+  }
+
   img {
     margin: 0 8px;
     width: 32px;
     height: 32px;
   }
 
+  p {
+    margin: 0;
+  }
+
   span {
-    color: grey;
+    color: $secondary-font-color;
   }
 }
