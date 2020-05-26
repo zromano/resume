@@ -6,6 +6,10 @@
   list-style: none;
   margin: 0;
   padding: 0;
+
+  a {
+    color: $font-color;
+  }
 }
 
 .projects__item {
@@ -42,22 +46,64 @@
   flex: 1 1 auto;
   font-size: 0.875rem;
   line-height: 1.5;
-  margin-bottom: 1.25rem;
-  color: darkgray;
+  color: $secondary-font-color;
 }
 
-.projects-detail__button {
+.projects-detail__github {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
   width: 100%;
-  text-align: center;
-  padding: 0 20%;
-  text-decoration: none;
+
+  .projects-detail__github-left {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    align-content: center;
+
+    .projects-detail__github-language {
+      font-style: italic;
+      font-size: .9rem;
+      align-self: center;
+
+      .projects-detail__github-language-dot {
+        line-height: 1rem;
+        display: inline-block;
+        border-radius: 50%;
+        height: 12px;
+        width: 12px;
+      }
+    }
+
+    .projects-detail__github-info {
+      margin-right: 1rem;
+
+      :first-child {
+        margin-right: 3px;
+      }
+
+    }
+  }
+
+  .projects-detail__github-right {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    align-content: center;
+    margin-left: auto;
+
+    a {
+      margin-right: 8px;
+
+      * {
+        height: 1.5rem;
+        width: 1.5rem;
+      }
+    }
+  }
 }
 
 .projects__loading {
   width: 100%;
   margin-top: 32px;
-}
-
-.projects-detail__icon {
-  margin-right: 8px;
 }

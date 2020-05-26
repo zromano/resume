@@ -10,7 +10,7 @@ const GithubProjects: React.FC = () => {
         axios.get('https://api.github.com/users/zromano24/repos')
             .then((response) => {
                 setProjectDetails(response.data);
-            }).catch((error) => {
+            }).catch(() => {
                 setProjectDetails('invalid');
             }
         );
@@ -35,7 +35,11 @@ const GithubProjects: React.FC = () => {
                     <GithubProjectDetail
                         projectName={projectDetails.name}
                         description={projectDetails.description}
-                        url={projectDetails.html_url}
+                        githubUrl={projectDetails.html_url}
+                        numStars={projectDetails.stargazers_count}
+                        numForks={projectDetails.forks_count}
+                        language={projectDetails.language}
+                        homePage={projectDetails.homepage}
                     />
                 </li>
             ));

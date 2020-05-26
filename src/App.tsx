@@ -10,8 +10,8 @@ const App: React.FC = () => {
     return (
         <>
             <SpaceNeedleAnimation/>
+            <Navbar/>
             <div className="App">
-                <Navbar/>
                 <div className="hero">
                     <h1>Hi, I'm Zach</h1>
                     <h2>I'm a full stack developer in Seattle.</h2>
