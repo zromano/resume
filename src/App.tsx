@@ -18,19 +18,21 @@ const App: React.FC = () => {
                 </div>
                 <hr/>
                 <main>
-                    <div className="about section">
+                    <div className="about">
                         <h1>About Me</h1>
                         <div className="about-content">
                             <div>
                                 <p>
                                     I'm a software engineer in Seattle, WA that loves creating pages for the web.
-                                    I work on everything from pixel-perfect front ends to blazing-fast APIs.
+                                    I currently work at Boeing on a team responsible for teaching others about agile
+                                    and modern web development.
                                 </p>
                                 <p>
-                                    Shortly after graduating from University of Illinois - Urbana/Champaign, I joined
-                                    the
-                                    engineering team at Boeing where I work on a wide variety of company-changing
-                                    applications.
+                                    I began my engineering journey at the University of Illinois - Urbana/Champaign where
+                                    I graduated in 2017 with a degree in aerospace engineering. Aerospace led me to Boeing,
+                                    where I started out as a systems engineer, but later transitioned to a software engineering
+                                    role. In addition to working at Boeing, I am also pursuing my Masters in Computer
+                                    Science from Johns Hopkins University, where I expect to graduate in August 2020.
                                 </p>
                             </div>
                             <img src={process.env.PUBLIC_URL + '/zach.jpeg'} alt='Zach'/>
@@ -38,11 +40,11 @@ const App: React.FC = () => {
                     </div>
 
                     <hr/>
-                    <div className="work section">
+                    <div className="work">
                         <JobHistory/>
                     </div>
                     <hr/>
-                    <div className="projects section">
+                    <div className="projects">
                         <GithubProjects/>
                     </div>
                 </main>

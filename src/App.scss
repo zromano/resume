@@ -27,7 +27,7 @@
   }
 
   main {
-    padding: 0 5px 64px 5px;
+    padding: 0 32px 64px 32px;
   }
 
   @media screen and (min-width: 992px) {
@@ -50,21 +50,27 @@
     .about-content {
       display: flex;
       flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+
+      div {
+        max-width: 450px;
+      }
 
       img {
         margin-left: 32px;
-        width: 15em;
-        height: 15em;
+        width: 33%;
+        height: auto;
       }
 
       @media screen and (max-width: 992px) {
         img {
-          display: none;
+          margin: 32px 0 0 0;
+          width: 100%;
+          height: auto;
         }
       }
     }
   }
-
-
 }
 
