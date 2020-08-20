@@ -65,18 +65,27 @@ const JobHistory: React.FC = () => {
                 <h2>Boeing</h2>
                 <h4>Full Stack Developer</h4>
                 <div className="work-company-role-duration">March 2019-Present</div>
+
+                <p>Development:</p>
+                <ul>
+                    <li>Built a website to securely track COVID-19 cases in under 24 hours</li>
+                    <li>Co–produced an app to optimize purchasing that discovered $1 billion in unrealized savings</li>
+                    <li>Utilized Spring Security and OAuth2 to properly authenticate and authorize users</li>
+                    <li>Co-developed an app that generates GitLab-CI pipelines to test and deploy existing apps</li>
+                </ul>
+                <p>DevOps:</p>
+                <ul>
+                    <li>Established scalable Selenium browser tests that must pass prior to deployment</li>
+                    <li>Identified and resolved over 150 bugs in production by adding SonarQube and Coverity</li>
+                    <li>Created a code review process for a team of 15 developers that previously did not do them</li>
+                    <li>Implemented Blue/Green deploys so that applications can be released with zero downtime</li>
+                    <li>Introduced a team to persistent chat and set up webhooks for live alerting of failures</li>
+                </ul>
+                <p>Teaching:</p>
                 <ul>
                     <li>Utilized paired programming to teach modern development practices for 1500+ hours</li>
+                    <li>Taught Extreme Programming principles such as Test-Driven Development and CI/CD</li>
                     <li>Facilitated courses to train developers on deploying software to the cloud</li>
-                    <li>Followed Extreme Programming principles such as Test-Driven Development and CI/CD</li>
-                    <li>Built a website to securely track COVID-19 cases in under 24 hours</li>
-                    <li>Co-developed an app that generates GitLab-CI pipelines to build, test, and deploy apps</li>
-                    <li>Utilized Spring Security and oAuth2 to properly authenticate and authorize users</li>
-                    <li>Built several highly available and scalable apps and Restful APIs</li>
-                    <li>Co–produced a website to optimize purchasing that discovered $1.5 billion in unrealized savings and has already saved over $20 million annually</li>
-                    <li>Integrated reusable React components into a web server using server rendered pages</li>
-                    <li>Established scalable Selenium browser tests that must pass prior to deployment</li>
-                    <li>Decreased number of defects deployed by adding SonarQube and Coverity scans</li>
                 </ul>
 
             </TabPanel>
