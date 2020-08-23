@@ -31,8 +31,8 @@ const App: React.FC = () => {
                                     I began my engineering journey at the University of Illinois - Urbana/Champaign where
                                     I graduated in 2017 with a degree in aerospace engineering. Aerospace led me to Boeing,
                                     where I started out as a systems engineer, but later transitioned to a software engineering
-                                    role. In addition to working at Boeing, I am also pursuing my Masters in Computer
-                                    Science from Johns Hopkins University, where I expect to graduate in August 2020.
+                                    role. In addition to working at Boeing, I also completed my Masters in Computer
+                                    Science from Johns Hopkins University in August 2020.
                                 </p>
                             </div>
                             <img src={process.env.PUBLIC_URL + '/zach.jpeg'} alt='Zach'/>
