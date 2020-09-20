@@ -72,5 +72,33 @@
       }
     }
   }
+
+  .presentations {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    .presentations__item {
+      display: flex;
+      flex-direction: column;
+      padding: 1rem;
+      width: 100%;
+
+      @media(min-width: 56rem) {
+        width: 50%;
+      }
+
+      .presentations__item_video {
+        width: 100%;
+        min-height: 300px;
+      }
+
+      p {
+        min-height: 2rem;
+      }
+    }
+  }
 }
 
