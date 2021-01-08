@@ -4,7 +4,7 @@ const Footer: React.FC = () => {
     return (
         <div className="footer">
             <div className="footer-links">
-                <a href='https://github.com/zromano24'>
+                <a href='https://github.com/zromano'>
                     <img src={process.env.PUBLIC_URL + '/github.svg'} alt='Github logo'/>
                 </a>
                 <a href='https://www.linkedin.com/in/zromano/'>
