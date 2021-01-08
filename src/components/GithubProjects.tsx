@@ -7,7 +7,7 @@ const GithubProjects: React.FC = () => {
     const [projectDetails, setProjectDetails] = useState<any>(undefined);
 
     useEffect(() => {
-        axios.get('https://api.github.com/users/zromano24/repos')
+        axios.get('https://api.github.com/users/zromano/repos')
             .then((response) => {
                 setProjectDetails(response.data);
             }).catch(() => {
