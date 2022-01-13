@@ -53,18 +53,32 @@ const JobHistory: React.FC = () => {
                     scrollButtons="on"
                     aria-label="scrollable force tabs example"
                 >
-                    <Tab label="Full Stack Dev" {...a11yProps(0)} />
-                    <Tab label="Data Analyst" {...a11yProps(1)} />
-                    <Tab label="Systems Engineer" {...a11yProps(2)} />
-                    <Tab label="Internships" {...a11yProps(3)} />
+                    <Tab label="Full Stack SDE" {...a11yProps(0)} />
+                    <Tab label="Full Stack Dev" {...a11yProps(1)} />
+                    <Tab label="Data Analyst" {...a11yProps(2)} />
+                    <Tab label="Systems Engineer" {...a11yProps(3)} />
+                    <Tab label="Internships" {...a11yProps(4)} />
                 </Tabs>
             </AppBar>
 
 
             <TabPanel value={value} index={0}>
+                <h2>Smartsheet</h2>
+                <h4>Full Stack SDE</h4>
+                <div className="work-company-role-duration">December 2020-Present</div>
+                <ul>
+                    <li>Designed and led full-stack development to allow users to be deactivated instead of deleted</li>
+                    <li>Improved caching and use of replicas to reduce load on primary DB by over 10M reads/hr</li>
+                    <li>Established daily SonarQube scans resulting in 7% improvement in code coverage</li>
+                    <li>Utilized Terraform to automate the creation of SQS queues in AWS</li>
+                    <li>Introduced team to newer build technologies such as Gradle and Liquibase on new service</li>
+                </ul>
+            </TabPanel>
+
+            <TabPanel value={value} index={1}>
                 <h2>Boeing</h2>
                 <h4>Full Stack Developer</h4>
-                <div className="work-company-role-duration">March 2019-Present</div>
+                <div className="work-company-role-duration">March 2019-December 2020</div>
 
                 <p>Development:</p>
                 <ul>
@@ -87,10 +101,9 @@ const JobHistory: React.FC = () => {
                     <li>Taught Extreme Programming principles such as Test-Driven Development and CI/CD</li>
                     <li>Facilitated courses to train developers on deploying software to the cloud</li>
                 </ul>
-
             </TabPanel>
 
-            <TabPanel value={value} index={1}>
+            <TabPanel value={value} index={2}>
                 <h2>Boeing</h2>
                 <h4>Data Analyst – Program Management Analytics Team</h4>
                 <div className="work-company-role-duration">June 2018-March 2019</div>
@@ -106,7 +119,7 @@ const JobHistory: React.FC = () => {
                 </ul>
             </TabPanel>
 
-            <TabPanel value={value} index={2}>
+            <TabPanel value={value} index={3}>
                 <h2>Boeing</h2>
                 <h4>Systems Engineer - Risk Management</h4>
                 <div className="work-company-role-duration">August 2017-June 2018</div>
@@ -119,7 +132,7 @@ const JobHistory: React.FC = () => {
                 </ul>
             </TabPanel>
 
-            <TabPanel value={value} index={3}>
+            <TabPanel value={value} index={4}>
                 <h2>Ford</h2>
                 <h4>Engine Test Team Intern</h4>
                 <div className="work-company-role-duration">May 2016-August 2016</div>
