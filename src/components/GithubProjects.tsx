@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import axios from 'axios';
 import {GithubProjectDetail} from "./GithubProjectDetail";
-import {LinearProgress} from "@material-ui/core";
+import {LinearProgress} from "@mui/material";
 
 const GithubProjects: React.FC = () => {
     const [projectDetails, setProjectDetails] = useState<any>(undefined);

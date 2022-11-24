@@ -1,9 +1,9 @@
 import React from 'react';
-import AppBar from '@material-ui/core/AppBar';
-import Tabs from '@material-ui/core/Tabs';
-import Tab from '@material-ui/core/Tab';
-import Typography from '@material-ui/core/Typography';
-import Box from '@material-ui/core/Box';
+import AppBar from '@mui/material/AppBar';
+import Tabs from '@mui/material/Tabs';
+import Tab from '@mui/material/Tab';
+import Typography from '@mui/material/Typography';
+import Box from '@mui/material/Box';
 
 interface TabPanelProps {
     children?: React.ReactNode;
@@ -50,8 +50,9 @@ const JobHistory: React.FC = () => {
                     onChange={handleChange}
                     indicatorColor="primary"
                     variant="scrollable"
-                    scrollButtons="on"
-                    aria-label="scrollable force tabs example"
+                    scrollButtons={true}
+                    aria-label="scrollable tabs of previous jobs"
+                    textColor="inherit"
                 >
                     <Tab label="Full Stack SDE" {...a11yProps(0)} />
                     <Tab label="Full Stack Dev" {...a11yProps(1)} />

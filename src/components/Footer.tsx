@@ -13,11 +13,11 @@ const Footer: React.FC = () => {
                 <a href="mailto:zachary.c.romano@gmail.com?Subject=Hello%20Zach" target="_top">
                     <img src={process.env.PUBLIC_URL + '/emailLogo.svg'} alt='Email symbol'/>
                 </a>
-                <a href={process.env.PUBLIC_URL + '/RESUME_Oct_2019.pdf'}>
+                <a href={process.env.PUBLIC_URL + '/Resume.pdf'}>
                     <img src={process.env.PUBLIC_URL + '/resumeLogo.svg'} alt='Resume symbol'/>
                 </a>
             </div>
-            <p className="footer-name">Zach Romano <span>2020</span></p>
+            <p className="footer-name">Zach Romano <span>2023</span></p>
             <p>
                 <span>zachary.c.romano@gmail.com</span>
             </p>
