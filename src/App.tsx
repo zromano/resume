@@ -5,16 +5,19 @@ import {Navbar} from "./components/Navbar";
 import {JobHistory} from "./components/JobHistory";
 import {Footer} from "./components/Footer";
 import {GithubProjects} from "./components/GithubProjects";
+import {Sidebars} from "./components/Sidebars";
 
 const App: React.FC = () => {
     return (
         <>
             <SpaceNeedleAnimation/>
+            <Sidebars/>
             <Navbar/>
             <div className="App">
                 <div className="hero">
-                    <h1>Hi, I'm Zach</h1>
-                    <h2>I'm a full stack developer in Seattle.</h2>
+                    <h1>Zach Romano</h1>
+                    <h1 id="hero-job">Software Engineer</h1>
+                    <p>(Seattle, Washington)</p>
                 </div>
                 <hr/>
                 <main>
@@ -53,10 +56,9 @@ const App: React.FC = () => {
                                 flag activity
                             </p>
                             <iframe
-                                title="Cature the Flag Presentation"
+                                title="Capture the Flag Presentation"
                                 className="presentations__item_video"
                                 src="https://www.youtube.com/embed/3UJVxCiLxSE?start=450"
-                                frameBorder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowFullScreen
                             />
@@ -71,7 +73,6 @@ const App: React.FC = () => {
                                 title="Paper Presentation"
                                 className="presentations__item_video"
                                 src="https://www.youtube.com/embed/BEEizbdQFkk"
-                                frameBorder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowFullScreen
                             />

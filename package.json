@@ -3,22 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@emotion/react": "^11.10.5",
-    "@emotion/styled": "^11.10.5",
-    "@mui/icons-material": "^5.10.15",
-    "@mui/material": "^5.10.15",
-    "@types/jest": "29.2.3",
-    "@types/node": "18.11.9",
-    "@types/react": "18.0.25",
-    "@types/react-dom": "18.0.9",
-    "@types/react-scroll": "^1.5.4",
-    "axios": "^1.2.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-inlinesvg": "^3.0.1",
-    "react-scripts": "^5.0.1",
-    "react-scroll": "^1.7.14",
-    "typescript": "4.9.3"
+    "react": "^18.2.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -42,8 +27,21 @@
     ]
   },
   "devDependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
     "@iconify/icons-octicon": "^1.2.23",
     "@iconify/react": "^4.0.0",
-    "sass": "^1.49.9"
+    "@mui/icons-material": "^5.10.15",
+    "@mui/material": "^5.10.15",
+    "@types/jest": "29.2.3",
+    "@types/node": "18.11.9",
+    "@types/react": "18.0.25",
+    "@types/react-dom": "18.0.9",
+    "axios": "^1.2.0",
+    "react-dom": "^18.2.0",
+    "react-inlinesvg": "^3.0.1",
+    "react-scripts": "^5.0.1",
+    "sass": "^1.49.9",
+    "typescript": "4.9.3"
   }
 }

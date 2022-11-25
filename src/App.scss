@@ -1,7 +1,8 @@
-@import "components/Navbar";
-@import "components/SpaceNeedleAnimation";
 @import "components/Footer";
 @import "components/GithubProjectDetail";
+@import "components/Navbar";
+@import "components/Sidebars";
+@import "components/SpaceNeedleAnimation";
 @import "variables";
 
 .App {
@@ -17,12 +18,20 @@
     margin-bottom: 0;
 
     h1 {
-      font-size: 5em;
+      font-size: 7em;
       margin: 0;
     }
 
-    h2 {
-      margin: 0 32px 15px 32px;
+    p {
+      margin-top: 0;
+      padding-bottom: 10%;
+      color: $secondary-font-color;
+    }
+
+    #hero-job {
+      color: $secondary-font-color;
+      margin: 0;
+      font-size: 3em;
     }
   }
 
@@ -38,6 +47,8 @@
 
   .work {
     min-height: 90vh;
+    max-width: $section-width;
+    margin: 0 auto;
 
     .work-company-role-duration {
       font-style: italic;
@@ -52,6 +63,8 @@
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-evenly;
+      max-width: $section-width;
+      margin: 0 auto;
 
       div {
         max-width: 450px;
@@ -77,8 +90,10 @@
     display: flex;
     flex-wrap: wrap;
     list-style: none;
-    margin: 0;
     padding: 0;
+    justify-content: space-evenly;
+    max-width: $section-width;
+    margin: 0 auto;
 
     .presentations__item {
       display: flex;
@@ -93,6 +108,7 @@
       .presentations__item_video {
         width: 100%;
         min-height: 300px;
+        border: none;
       }
 
       p {

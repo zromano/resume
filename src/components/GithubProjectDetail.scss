@@ -4,8 +4,9 @@
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  margin: 0;
   padding: 0;
+  max-width: $section-width;
+  margin: 0 auto;
 
   a {
     color: $font-color;

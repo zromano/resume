@@ -1,5 +1,11 @@
 @import "../variables";
 
+@media screen and (min-width: 992px) {
+  .navbar {
+    display: none !important;
+  }
+}
+
 .navbar {
   z-index: 1;
   height: 64px;

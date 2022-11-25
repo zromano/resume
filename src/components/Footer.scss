@@ -6,7 +6,12 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border-top: 1px solid grey;
+
+  @media screen and (min-width: 992px) {
+    .footer-links {
+      display: none  !important;
+    }
+  }
 
   .footer-links {
     display: flex;

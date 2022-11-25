@@ -1,0 +1,45 @@
+@import "../variables";
+
+@media screen and (max-width: 992px) {
+  .sidebars {
+    display: none;
+  }
+}
+
+.sidebars {
+  .sidebars-left {
+    left: 30px;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    top: 30%;
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    img {
+      margin: 8px 0;
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  .sidebars-right {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    top: 30%;
+    right: 30px;
+    writing-mode: vertical-lr;
+
+    a {
+      text-decoration: none;
+      color: $font-color;
+    }
+  }
+}
