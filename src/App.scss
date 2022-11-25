@@ -17,6 +17,15 @@
     align-items: center;
     margin-bottom: 0;
 
+    @media screen and (max-width: 992px) {
+      h1 {
+        font-size: 3em !important;
+      }
+      #hero-job {
+        font-size: 2em !important;
+      }
+    }
+
     h1 {
       font-size: 7em;
       margin: 0;
