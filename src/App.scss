@@ -18,6 +18,7 @@
     margin-bottom: 0;
 
     :before {
+      z-index: -10000;
       content: "";
       position: absolute;
       top: 0;
