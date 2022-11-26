@@ -3,6 +3,8 @@ import githubLogo from '../assets/github.svg';
 import linkedinLogo from '../assets/linkedin.svg';
 import emailLogo from '../assets/emailLogo.svg';
 import resumeLogo from '../assets/resumeLogo.svg';
+import SpaceNeedle from "../assets/space-needle.svg";
+import SVG from "react-inlinesvg";
 
 const Sidebars: React.FC = () => {
     return (
@@ -11,22 +13,22 @@ const Sidebars: React.FC = () => {
                 <ul>
                     <li>
                         <a href='https://github.com/zromano'>
-                            <img src={githubLogo} alt='Github logo'/>
+                            <SVG src={githubLogo}/>
                         </a>
                     </li>
                     <li>
                         <a href='https://www.linkedin.com/in/zromano/'>
-                            <img src={linkedinLogo} alt='Linkedin logo'/>
+                            <SVG src={linkedinLogo}/>
                         </a>
                     </li>
                     <li>
                         <a href="mailto:zachary.c.romano@gmail.com?Subject=Hello%20Zach" target="_top">
-                            <img src={emailLogo} alt='Email symbol'/>
+                            <SVG src={emailLogo}/>
                         </a>
                     </li>
                     <li>
                         <a href={process.env.PUBLIC_URL + '/Resume.pdf'}>
-                            <img src={resumeLogo} alt='Resume symbol'/>
+                            <SVG src={resumeLogo}/>
                         </a>
                     </li>
                 </ul>

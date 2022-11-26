@@ -21,10 +21,31 @@
       padding: 0;
     }
 
-    img {
-      margin: 8px 0;
-      width: 32px;
-      height: 32px;
+    li {
+      width: 50px;
+      height: 50px;
+
+      svg {
+        margin: 8px 0;
+        width: 32px;
+        height: 32px;
+      }
+
+      img {
+        margin: 8px 0;
+        width: 32px;
+        height: 32px;
+      }
+
+      :hover {
+        svg {
+          width: 36px;
+          height: 36px;
+          path {
+            fill: $link-color;
+          }
+        }
+      }
     }
   }
 
@@ -35,12 +56,16 @@
     align-items: center;
     top: 30%;
     right: 30px;
-    writing-mode: vertical-lr;
-    font-style: italic;
 
     a {
+      writing-mode: vertical-lr;
+      font-style: italic;
       text-decoration: none;
       color: $font-color;
+    }
+
+    :hover {
+      color: $link-color;
     }
   }
 }

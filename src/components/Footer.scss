@@ -22,7 +22,7 @@
     margin-top: 16px;
   }
 
-  img {
+  svg {
     margin: 0 8px;
     width: 32px;
     height: 32px;
@@ -34,5 +34,17 @@
 
   span {
     color: $secondary-font-color;
+  }
+
+  a {
+    font-style: italic;
+    text-decoration: none;
+    color: $secondary-font-color;
+  }
+
+  .footer-email {
+    :hover {
+      color: $link-color;
+    }
   }
 }

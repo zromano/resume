@@ -1,6 +1,6 @@
 import React from 'react';
 import SVG from "react-inlinesvg";
-import SpaceNeedle from "./space-needle.svg";
+import SpaceNeedle from "../assets/space-needle.svg";
 
 const SpaceNeedleAnimation: React.FC = () => {
     return (

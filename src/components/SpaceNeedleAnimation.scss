@@ -15,11 +15,8 @@
   -webkit-animation: scale-out-center 0.2s cubic-bezier(0.550, 0.085, 0.680, 0.530) 2.5s both;
   animation: scale-out-center 0.2s cubic-bezier(0.550, 0.085, 0.680, 0.530) 2.5s both;
 
-  svg {
-    width: 20em;
-  }
-
   svg  {
+    width: 20em;
     fill: none;
     stroke-width: 3;
     stroke: grey;
