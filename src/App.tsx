@@ -1,11 +1,12 @@
 import React from 'react';
 import './App.scss';
-import {SpaceNeedleAnimation} from "./components/SpaceNeedleAnimation";
-import {Navbar} from "./components/Navbar";
-import {JobHistory} from "./components/JobHistory";
-import {Footer} from "./components/Footer";
-import {GithubProjects} from "./components/GithubProjects";
-import {Sidebars} from "./components/Sidebars";
+import {SpaceNeedleAnimation} from './components/SpaceNeedleAnimation';
+import {Navbar} from './components/Navbar';
+import {JobHistory} from './components/JobHistory';
+import {Footer} from './components/Footer';
+import {GithubProjects} from './components/GithubProjects';
+import {Sidebars} from './components/Sidebars';
+import zachJpeg from './assets/zach.jpeg';
 
 const App: React.FC = () => {
     return (
@@ -17,7 +18,7 @@ const App: React.FC = () => {
                 <div className="hero">
                     <h1>Zach Romano</h1>
                     <h1 id="hero-job">Software Engineer</h1>
-                    <p>(Seattle, Washington)</p>
+                    <p>Seattle, Washington</p>
                 </div>
                 <hr/>
                 <main>
@@ -39,7 +40,7 @@ const App: React.FC = () => {
                                     transition to Smartsheet where I currently work as a full stack software engineer.
                                 </p>
                             </div>
-                            <img src={process.env.PUBLIC_URL + '/zach.jpeg'} alt='Zach'/>
+                            <img src={zachJpeg} alt='Zach'/>
                         </div>
                     </div>
                     <hr/>
