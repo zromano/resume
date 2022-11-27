@@ -54,11 +54,10 @@ const JobHistory: React.FC = () => {
                     aria-label="scrollable tabs of previous jobs"
                     textColor="inherit"
                 >
-                    <Tab label="Full Stack SDE" {...a11yProps(0)} />
-                    <Tab label="Full Stack Dev" {...a11yProps(1)} />
-                    <Tab label="Data Analyst" {...a11yProps(2)} />
-                    <Tab label="Systems Engineer" {...a11yProps(3)} />
-                    <Tab label="Internships" {...a11yProps(4)} />
+                    <Tab label="Smartsheet" {...a11yProps(0)} />
+                    <Tab label="Boeing" {...a11yProps(1)} />
+                    <Tab label="Ford" {...a11yProps(2)} />
+                    <Tab label="Caterpillar" {...a11yProps(3)} />
                 </Tabs>
             </AppBar>
 
@@ -79,8 +78,7 @@ const JobHistory: React.FC = () => {
             <TabPanel value={value} index={1}>
                 <h2>Boeing</h2>
                 <h4>Full Stack Developer</h4>
-                <div className="work-company-role-duration">March 2019-December 2020</div>
-
+                <div className="work-company-role-duration">August 2017-December 2020</div>
                 <p>Development:</p>
                 <ul>
                     <li>Built a website to securely track COVID-19 cases in under 24 hours</li>
@@ -105,41 +103,15 @@ const JobHistory: React.FC = () => {
             </TabPanel>
 
             <TabPanel value={value} index={2}>
-                <h2>Boeing</h2>
-                <h4>Data Analyst – Program Management Analytics Team</h4>
-                <div className="work-company-role-duration">June 2018-March 2019</div>
-                <ul>
-                    <li>Created a website using .NET Core to host real-time visualizations</li>
-                    <li>Visualized data in Tableau that eliminated hundreds of charting hours annually</li>
-                    <li>Designed a risk management analytics package for commercial and defense products</li>
-                    <li>
-                        Connected engineering, production, and supply chain data to provide metrics on part changes
-                        all the way from design to installation
-                    </li>
-                    <li>Awarded organization project of the year</li>
-                </ul>
-            </TabPanel>
-
-            <TabPanel value={value} index={3}>
-                <h2>Boeing</h2>
-                <h4>Systems Engineer - Risk Management</h4>
-                <div className="work-company-role-duration">August 2017-June 2018</div>
-                <ul>
-                    <li>Managed risks, issues, and opportunities for a team of 300+ people</li>
-                    <li>Maintained proper risk mitigation plans for teams and individual engineers</li>
-                    <li>Educated executives every week about the current level of risk on the 777X</li>
-                    <li>Eliminated 90 engineer hours quarterly by implementing report automation using VBA</li>
-                    <li>Used R to aide a data analytics team by compressing several large data exports</li>
-                </ul>
-            </TabPanel>
-
-            <TabPanel value={value} index={4}>
                 <h2>Ford</h2>
                 <h4>Engine Test Team Intern</h4>
                 <div className="work-company-role-duration">May 2016-August 2016</div>
                 <ul>
                     <li>Designed a simulation of engine compression in MatLab to help identify faulty engines</li>
                 </ul>
+            </TabPanel>
+
+            <TabPanel value={value} index={3}>
                 <h2>Caterpillar</h2>
                 <h4>Design Team Student Practicum</h4>
                 <div className="work-company-role-duration">May 2015-November 2015</div>

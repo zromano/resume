@@ -20,7 +20,7 @@
     :before {
       z-index: -10000;
       content: "";
-      position: absolute;
+      position: fixed;
       top: 0;
       left: 0;
       width: 100%;
@@ -133,6 +133,7 @@
       flex-direction: column;
       padding: 1rem;
       width: 100%;
+      margin-bottom: 32px;
 
       @media(min-width: 56rem) {
         width: 50%;
