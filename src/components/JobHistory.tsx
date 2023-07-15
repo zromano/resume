@@ -66,12 +66,25 @@ const JobHistory: React.FC = () => {
                 <h2>Smartsheet</h2>
                 <h4>Full Stack SDE</h4>
                 <div className="work-company-role-duration">December 2020-Present</div>
+                <p>Development & Design:</p>
                 <ul>
-                    <li>Designed and led full-stack development to allow users to be deactivated instead of deleted</li>
-                    <li>Improved caching and use of replicas to reduce load on primary DB by over 10M reads/hr</li>
-                    <li>Established daily SonarQube scans resulting in 7% improvement in code coverage</li>
-                    <li>Utilized Terraform to automate the creation of SQS queues in AWS</li>
-                    <li>Introduced team to newer build technologies such as Gradle and Liquibase on new service</li>
+                    <li>Designed/led full-stack development of ‘deactivate user’ feature as an alternative to deleting them</li>
+                    <li>Created a DynamoDB table to store privacy related policies based on a user’s domain name</li>
+                    <li>Analyzed service performance with Locust to enable service to reach 4,000+ requests per second</li>
+                    <li>Improved caching and use of replicas to reduce load on database by over 10 million reads per hour</li>
+                    <li>Led an effort to upgrade essential company-wide libraries to Java 17 and SpringBoot 3</li>
+                </ul>
+                <p>DevOps:</p>
+                <ul>
+                    <li>Profiled memory/CPU utilization to determine optimal Kubernetes pod and JVM sizing</li>
+                    <li>Established a testing strategy that enabled high-frequency and high-confidence deploys</li>
+                    <li>Created a tool that automatically creates a pull request to update our dependencies to latest version</li>
+                </ul>
+                <p>Teaching:</p>
+                <ul>
+                    <li>Taught and encouraged modern Java/Spring practices and became the ‘go-to’ SpringBoot developer</li>
+                    <li>Mentored an intern and guided them on improving the SCIM interface with Azure Active Directory</li>
+                    <li>Introduced team to build technologies such as Gradle and Liquibase to improve pipeline speeds</li>
                 </ul>
             </TabPanel>
 
