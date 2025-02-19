@@ -17,7 +17,7 @@ const App: React.FC = () => {
             <div className="App">
                 <div className="hero">
                     <h1>Zach Romano</h1>
-                    <h1 id="hero-job">Software Engineer</h1>
+                    <h1 id="hero-job">Senior Software Engineer</h1>
                     <p>Seattle, Washington</p>
                 </div>
                 <hr/>
