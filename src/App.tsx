@@ -37,7 +37,7 @@ const App: React.FC = () => {
                                     Boeing, where I started out as a systems engineer, but later transitioned to a software
                                     engineering. While working at Boeing, I also completed my Masters in Computer
                                     Science from Johns Hopkins University in August 2020. From there, I made the
-                                    transition to Smartsheet where I currently work as a full stack software engineer.
+                                    transition to Smartsheet where I currently work as a senior software engineer.
                                 </p>
                             </div>
                             <img src={zachJpeg} alt='Zach'/>

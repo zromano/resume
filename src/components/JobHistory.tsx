@@ -64,28 +64,23 @@ const JobHistory: React.FC = () => {
 
             <TabPanel value={value} index={0}>
                 <h2>Smartsheet</h2>
-                <h4>Full Stack SDE</h4>
+                <h4>Senior Software Engineer</h4>
                 <div className="work-company-role-duration">December 2020-Present</div>
-                <p>Development & Design:</p>
-                <ul>
-                    <li>Designed/led full-stack development of ‘deactivate user’ feature as an alternative to deleting them</li>
-                    <li>Created a DynamoDB table to store privacy related policies based on a user’s domain name</li>
-                    <li>Analyzed service performance with Locust to enable service to reach 4,000+ requests per second</li>
-                    <li>Improved caching and use of replicas to reduce load on database by over 10 million reads per hour</li>
-                    <li>Led an effort to upgrade essential company-wide libraries to Java 17 and SpringBoot 3</li>
-                </ul>
-                <p>DevOps:</p>
-                <ul>
-                    <li>Profiled memory/CPU utilization to determine optimal Kubernetes pod and JVM sizing</li>
-                    <li>Established a testing strategy that enabled high-frequency and high-confidence deploys</li>
-                    <li>Created a tool that automatically creates a pull request to update our dependencies to latest version</li>
-                </ul>
-                <p>Teaching:</p>
-                <ul>
-                    <li>Taught and encouraged modern Java/Spring practices and became the ‘go-to’ SpringBoot developer</li>
-                    <li>Mentored an intern and guided them on improving the SCIM interface with Azure Active Directory</li>
-                    <li>Introduced team to build technologies such as Gradle and Liquibase to improve pipeline speeds</li>
-                </ul>
+                <p>I've worked on two teams during my time at Smartsheet. The Directory Services team and the Advanced Solutions team.</p>
+                <p>
+                    On the Directory Services team, I primarily worked on setting up a new decoupled microservice to store user data.
+                    We built this Java/Spring service from scratch and it eventually was serving more than 4,000 requests per second.
+                    During my time on this team, I also designed and led the implementation of the "Deactivate User" feature. Previously,
+                    you could only delete users in Smartsheet which was a painful process on admins and an expensive computation to carry
+                    out. My deactivate feature allows admins to block that user from logging in, improving the process for everyone.
+                </p>
+                <p>
+                    On the Advanced Solutions team, I helped build and maintain the ability to group Smartsheet resources into collections.
+                    These "Collections" allow you to group Sheets, Reports, or Dashboards located anywhere in Smartsheet and provides the
+                    ability to share them to other users all at once. This makes it possible for admins to manage their sharing in a more
+                    efficient manner and allows users to see everything they need in one spot. This work involved building a new service
+                    from the ground up and designing a migration strategy to move data off a legacy code base.
+                </p>
             </TabPanel>
 
             <TabPanel value={value} index={1}>
