@@ -22,7 +22,7 @@ const Footer: React.FC = () => {
                     <SVG src={resumeLogo}/>
                 </a>
             </div>
-            <p className="footer-name">Zach Romano <span>2023</span></p>
+            <p className="footer-name">Zach Romano <span>2025</span></p>
             <div className="footer-email">
                 <a href="mailto:zachary.c.romano@gmail.com?Subject=Hello%20Zach" target="_top">
                     zachary.c.romano@gmail.com
